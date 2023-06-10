@@ -10,6 +10,9 @@ python-decouple = "*"
 requests = "*"
 drf-yasg = "*"
 django-cors-headers = "*"
+pytest = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
