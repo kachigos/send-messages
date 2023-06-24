@@ -70,7 +70,7 @@ class UsContactView(generics.CreateAPIView):
     def create(self, request, *args, **kwargs):
         response = super().create(request, *args, **kwargs)
         data = request.data
-        message_text = "Котакты:\n"
+        message_text = "Контакты:\n"
         for key, value in data.items():
             if key in ["username", "phone"]:
                 message_text += f"{key}: {value}\n"
